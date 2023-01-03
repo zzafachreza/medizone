@@ -345,6 +345,14 @@ export default function Cart({ navigation, route }) {
         // padding: 10,
         backgroundColor: colors.background1,
       }}>
+      <View style={{
+        position: 'absolute',
+        backgroundColor: 'red',
+        width: windowWidth,
+        height: windowWidth
+      }}>
+        <Text>test</Text>
+      </View>
 
       <FlatList data={data} renderItem={__renderItem} />
 

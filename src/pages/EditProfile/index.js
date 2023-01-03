@@ -175,7 +175,7 @@ export default function EditProfile({ navigation, route }) {
       setLoading(false);
       showMessage({
         type: 'success',
-        message: 'Data bershasil diupdate..',
+        message: 'Data successfully updated !',
       });
 
       navigation.replace('MainApp');
@@ -247,7 +247,7 @@ export default function EditProfile({ navigation, route }) {
 
         <MyGap jarak={10} />
         <MyInput
-          label="Nama Pribadi"
+          label="Fullname"
           iconname="person-outline"
           value={data.nama_lengkap}
           onChangeText={value =>

@@ -44,15 +44,15 @@ export default function Login({ navigation }) {
   const masuk = () => {
     if (data.email.length === 0 && data.password.length === 0) {
       showMessage({
-        message: 'Maaf email dan Password masih kosong !',
+        message: 'Sorry your email and password is still empty!',
       });
     } else if (data.email.length === 0) {
       showMessage({
-        message: 'Maaf email masih kosong !',
+        message: 'Sorry your email is still empty!',
       });
     } else if (data.password.length === 0) {
       showMessage({
-        message: 'Maaf Password masih kosong !',
+        message: 'Sorry your password is still empty!',
       });
     } else {
       setLoading(true);
